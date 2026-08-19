@@ -118,14 +118,6 @@ def hello():
 def openurl(url):
 	webbrowser.open(url)
 
-def myspace(site: str):
-	if site == "bili":
-		webbrowser.open("https://space.bilibili.com/499985403")
-	elif site == "gitee":
-		webbrowser.open("https://gitee.com/MeiWeiDeXiaoXia")
-	else:
-		webbrowser.open("https://space.bilibili.com/499985403")
-
 def timeout(sec: int):
 	stop_flag = False
 
