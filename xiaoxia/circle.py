@@ -2,6 +2,11 @@
 # Copyright (c) 2026 MeiWeiDeXiaoXia
 # SPDX‑License‑Identifier: MIT
 
+"""
+xiaoxia 模块 - circle 子模块
+自用Python小工具集合
+"""
+
 from decimal import Decimal
 
 def circle_area(radius: Decimal) -> Decimal:
