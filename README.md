@@ -2,6 +2,9 @@
 
 自用Python小工具集合
 
+## 环境要求
+- Python 版本 ≥ 3.6
+
 ## 依赖
 - pynput(LGPL‑3.0)，用户自行pip安装
 
