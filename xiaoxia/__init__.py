@@ -96,7 +96,7 @@ def fact(n):
 	else:
 		return n * fact(n - 1)
 	
-def pow(a, b):
+def Pow(a, b):
 	if b == 0:
 		return 1
 	else:
