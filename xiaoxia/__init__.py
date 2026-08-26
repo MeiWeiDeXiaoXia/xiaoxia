@@ -16,6 +16,8 @@ import subprocess
 import os
 import math
 import warnings
+import platform
+import time
 
 # ==============================================================================
 # Nuke() 函数：完整复制自 B站视频 BV1Tc9FYQEx6，作者 Alanbecker
@@ -32,6 +34,11 @@ def Nuke(n):
             a.append(i)
     return a
 
+def clear():
+    if platform.system() == "Windows":
+        subprocess.run("cls", shell=True)
+    else:
+        subprocess.run("clear", shell=True)
 
 def isPrime(n: int) -> bool:
     """
@@ -122,8 +129,8 @@ def fib(n):
         return fib(n - 1) + fib(n - 2)
 
 
-def hello():
-    print("Hello, World!")
+def helloworld():
+    print("Hello world!")
 
 
 def openurl(url):
