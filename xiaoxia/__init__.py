@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Copyright (c) 2026 MeiWeiDeXiaoXia
 # SPDX‑License‑Identifier: MIT
-# Gitee: https://gitee.com/MeiWeiDeXiaoXia/xiaoxia
+# Gitee: https://gitee.com/MeiWeiDeXiaoXia
 # Bilibili: https://space.bilibili.com/499985403
 
 """
@@ -13,7 +13,6 @@ import time
 import webbrowser
 from pynput import keyboard
 import subprocess
-import os
 import math
 import warnings
 import platform
@@ -89,15 +88,11 @@ def isPrime(n: int) -> bool:
 
 
 def DepSaak():
-    while True:
-        user_str = input("你想说什么？\n")
-        if user_str == "exit":
-            break
-        else:
-            time.sleep(5)
-            print("服务器繁忙，请稍后再试")
-            # 跨平台等待按键
-            if os.name == "nt":
+    user_str = input("你想说什么？\n")
+    time.sleep(5)
+    print("服务器繁忙，请稍后再试")
+    # 跨平台等待按键
+            if platform.system() == "Windows":
                 subprocess.run("pause", shell=True)
             else:
                 input("按回车键继续...")
